@@ -1,0 +1,11 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        int[] a = {1,2,2,3,4,4};
+        Set<Integer> set = new LinkedHashSet<>();
+
+        for (int x : a) set.add(x);
+        System.out.println(set);
+    }
+}
