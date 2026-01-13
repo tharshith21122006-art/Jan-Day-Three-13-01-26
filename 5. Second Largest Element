@@ -1,0 +1,15 @@
+class Main {
+    public static void main(String[] args) {
+        int[] a = {10,5,20,8};
+        int first = Integer.MIN_VALUE, second = Integer.MIN_VALUE;
+
+        for (int x : a) {
+            if (x > first) {
+                second = first;
+                first = x;
+            } else if (x > second && x != first)
+                second = x;
+        }
+        System.out.println(second);
+    }
+}
