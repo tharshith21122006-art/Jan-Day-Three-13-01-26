@@ -1,0 +1,13 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        int[] a={1,2,3}, b={2,3,4};
+        Set<Integer> s=new HashSet<>();
+
+        for(int x:a) s.add(x);
+        for(int x:b)
+            if(s.contains(x))
+                System.out.println(x);
+    }
+}
